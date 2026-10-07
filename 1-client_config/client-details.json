@@ -1,0 +1,27 @@
+{
+  "client_details": {
+    "company_name": "Eventve",
+    "phone_number": "+91 98765 43210",
+    "address": "149-B, Andheri-(East) Mumbai",
+    "email":"weddings@eventve.in",
+    "client_name_for_wb":"nvee10091",
+    "client_project_name_for_wb":"nvee10091"
+  },
+  "social_media_details": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "twitter": "",
+    "youtube": "",
+    "pinterest": ""
+  },
+  "theme_colors_details": {
+      "primary": "",
+      "secondary": "",
+      "light": "",
+      "bg": "",
+      "border": "",
+      "accent":"",
+      "text":""
+  }
+}

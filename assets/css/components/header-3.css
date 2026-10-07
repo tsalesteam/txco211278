@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap");
+
+.header-3 {
+  font-family: 'Rajdhani', sans-serif !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+.header-3 *,
+.header-3 *::before,
+.header-3 *::after {
+  box-sizing: border-box;
+}
+
+.header-3-top-bar {
+  background: var(--bg, #1b1b1b);
+  padding: 14px 0;
+  font-size: 13px;
+  color: var(--light, #ffffff);
+}
+
+.header-3-bar-list {
+  margin: 0;
+}
+
+.header-3-bar-list i {
+  margin-right: 4px;
+}
+
+.header-3-holder {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 12px 0;
+}
+
+.header-3-logo img {
+  max-height: 46px;
+}
+
+.header-3-navbar {
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+
+.header-3-menu > li > a {
+  color: var(--light, #ffffff) !important;
+  font-family: 'Rajdhani', sans-serif !important;
+  font-size: 14px !important;
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-3-menu > li.active > a,
+.header-3-menu > li > a:hover,
+.header-3-menu > li > a:focus {
+  color: var(--accent, #eab308) !important;
+}
+
+.header-3-menu > li > a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: var(--accent, #eab308);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.header-3-menu > li > a:hover::before,
+.header-3-menu > li.active > a::before {
+  transform: scaleX(1);
+}
+
+.header-3-btn-quote {
+  background: var(--accent, #eab308);
+  border: none;
+  color: var(--light, #ffffff) !important;
+  padding: 9px 20px;
+  margin-left: 8px;
+}
+
+.header-3-btn-quote:hover {
+  background: var(--secondary, #d99a00);
+}
+
+.header-3-search-li a {
+  padding: 10px 10px 10px 5px;
+}
+
+.header-3-hero {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 640px;
+  background: center/cover no-repeat;
+  color: var(--light, #ffffff);
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Rajdhani', sans-serif !important;
+}
+
+.header-3-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header-3-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 175px 80px 100px;
+}
+
+.header-3-hero-title {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: var(--light, #ffffff);
+  font-family: 'Rajdhani', sans-serif !important;
+}
+
+.header-3-highlight {
+  color: var(--accent, #eab308);
+}
+
+.header-3-hero-sub {
+  font-size: 15px;
+  margin-bottom: 35px;
+  color: var(--light, #ffffff);
+}
+
+.header-3-btn-primary {
+  background: var(--primary, #eab308);
+  border: none;
+  color: var(--light, #ffffff);
+  font-weight: 600;
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+}
+
+.header-3-btn-primary:hover {
+  background: var(--secondary, #d99a00);
+  transform: translateY(-3px);
+}
+
+.header-3.header-3--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--light, #ffffff);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-3.header-3--sticky .header-3-top-bar {
+  display: none;
+}
+
+.header-3.header-3--sticky .header-3-holder {
+  background: transparent;
+}
+
+.header-3.header-3--sticky .header-3-menu > li > a,
+.header-3.header-3--sticky .header-3-search-li a,
+.header-3.header-3--sticky .header-3-bar-list,
+.header-3.header-3--sticky .ri-phone-line,
+.header-3.header-3--sticky .ri-map-pin-line,
+.header-3.header-3--sticky .ri-mail-line {
+  color: var(--text, #000000);
+}
+
+.header-3.header-3--sticky .header-3-menu > li > a::before {
+  background: var(--accent, #eab308);
+}
+
+.header-3.header-3--sticky .header-3-btn-quote {
+  background: var(--accent, #eab308);
+  color: var(--light, #ffffff) !important;
+}
+
+.header-3 #nav .navbar-collapse {
+  z-index: 999;
+}
+
+@media (max-width: 767px) {
+
+  .header-3-bar-list {
+    text-align: center;
+  }
+
+  .header-3-hero-content {
+    padding: 220px 30px 80px;
+  }
+
+  .header-3-hero-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-3-bar-list {
+    font-size: 10px;
+  }
+
+  .header-3-hero-sub {
+    font-size: 13px;
+  }
+}

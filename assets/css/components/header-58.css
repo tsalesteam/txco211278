@@ -1,0 +1,304 @@
+header.header-58 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.4s;
+  background: transparent;
+}
+
+.header-58 .header-holder {
+  padding: 18px 0;
+  background: transparent;
+}
+
+.header-58 .navbar-nav {
+  padding: 8px 18px !important;
+}
+
+header.header-58.sticky-active {
+  background: var(--bg, #f7f5ef);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.header-58 .site-logo-img {
+  max-height: 58px !important;
+}
+
+.header-58 .main-navigation.navbar-right > li {
+  padding: 0 6px;
+}
+
+.header-58 .main-navigation.navbar-right > li > a {
+  color: var(--light, #ffffff);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  transition: 0.35s;
+}
+
+.header-58 .main-navigation.navbar-right > li > a:hover {
+  color: var(--accent, #d6f5b2);
+  background: none;
+}
+
+.header-58.sticky-active .main-navigation.navbar-right > li > a {
+  color: var(--primary, #355b3d) !important;
+}
+
+.header-58-section {
+  padding: 0;
+}
+
+.coaching-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.coaching-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      120deg,
+      color-mix(in srgb, var(--primary, #0a3232) 95%, transparent) 0%,
+      color-mix(in srgb, var(--primary, #0a3232) 88%, transparent) 35%,
+      color-mix(in srgb, var(--primary, #0a3232) 55%, transparent) 70%,
+      color-mix(in srgb, var(--primary, #0a3232) 20%, transparent) 100%
+    );
+}
+
+.coaching-content {
+  position: relative;
+  z-index: 2;
+  padding: 130px 0;
+}
+
+.coaching-tag {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--light, #ffffff);
+  color: var(--primary, #0a3232);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+
+.coaching-content h1 {
+  color: var(--light, #fff);
+  font-size: 68px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.coaching-content p {
+  color: var(--light, rgba(255, 255, 255, 0.9));
+  font-size: 20px;
+  line-height: 1.9;
+  max-width: 620px;
+  margin-bottom: 45px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-custom {
+  background: var(--light, #fff);
+  color: var(--primary, #0a3232);
+  padding: 18px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.35s;
+}
+
+.btn-primary-custom:hover {
+  background: var(--primary, #0a3232);
+  color: var(--light, #fff);
+  text-decoration: none;
+}
+
+.btn-outline-custom {
+  padding: 9px 36px;
+  border-radius: 50px;
+  border: 2px solid var(--border, rgba(255, 255, 255, 0.4));
+  color: var(--light, #fff);
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.35s;
+}
+
+.btn-outline-custom:hover {
+  background: var(--light, #fff);
+  color: var(--primary, #0a3232);
+  text-decoration: none;
+}
+
+.hero-achievements {
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.achievement-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.15));
+  border-radius: 20px;
+  padding: 28px 35px;
+  min-width: 180px;
+}
+
+.achievement-box h3 {
+  color: var(--light, #fff);
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.achievement-box span {
+  color: var(--light, rgba(255, 255, 255, 0.8));
+}
+
+.admission-card {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  background: var(--light, #ffffff);
+  border-radius: 30px;
+  padding: 45px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.admission-card h3 {
+  color: var(--primary, #0a3232);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.admission-card p {
+  color: var(--text, #666);
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+
+.admission-card ul {
+  margin: 0 0 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.admission-card ul li {
+  padding: 12px 0;
+  color: var(--text, #333);
+  border-bottom: 1px solid var(--border, #ececec);
+}
+
+.apply-btn {
+  display: block;
+  text-align: center;
+  background: var(--primary, #0a3232);
+  color: var(--light, #fff);
+  padding: 18px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.35s;
+}
+
+.apply-btn:hover {
+  background: var(--secondary, #145858);
+  color: var(--light, #fff);
+  text-decoration: none;
+}
+
+.floating-card {
+  position: absolute;
+  background: var(--light, #ffffff);
+  border-radius: 20px;
+  padding: 11px 22px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+}
+
+.card-1 {
+  left: 70px;
+  bottom: 60px;
+}
+
+.card-2 {
+  right: 16px;
+  top: 120px;
+}
+
+.floating-card h4 {
+  margin: 0;
+  color: var(--primary, #0a3232);
+  font-size: 20px;
+}
+
+.floating-card p {
+  margin: 8px 0 0;
+  color: var(--text, #777);
+}
+
+@media (max-width: 991px) {
+  .coaching-content h1 {
+    font-size: 52px;
+  }
+
+  .admission-card {
+    margin-top: 40px;
+  }
+
+  .card-1,
+  .card-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .coaching-content {
+    padding: 120px 0 70px;
+  }
+
+  .coaching-content h1 {
+    font-size: 40px;
+  }
+
+  .coaching-content p {
+    font-size: 17px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary-custom,
+  .btn-outline-custom {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-achievements {
+    flex-direction: column;
+  }
+
+  .achievement-box {
+    width: 100%;
+  }
+
+  .admission-card {
+    padding: 30px;
+  }
+}

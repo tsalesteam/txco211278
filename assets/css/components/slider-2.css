@@ -1,0 +1,193 @@
+/* Container */
+.slider-2 .carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100vh !important;
+  font-family: 'Quicksand';
+}
+
+/* Carousel Inner */
+.slider-2 .carousel-inner {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Each Item */
+.slider-2 .carousel-item {
+  flex: 0 0 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling with Zoom Animation */
+.slider-2 .carousel-item img {
+  width: 100%;
+  height: 100vh !important;
+  object-fit: cover;
+  animation: zoomInOut 6s ease-in-out infinite;
+  transition: transform 1s ease-in-out;
+}
+
+/* Overlay over image */
+.slider-2 .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Caption Wrapper */
+.slider-2 .carousel-caption {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: var(--light, #fff);
+  text-align: center;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Caption Heading */
+.slider-2 .carousel-caption h2 {
+  font-size: 44px;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  color: var(--light, #fff);
+  font-family: 'Quicksand';
+}
+
+/* Caption Paragraph */
+.slider-2 .carousel-caption p {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  color: var(--light, #fff);
+}
+
+/* Button */
+.slider-2 .btn-teo-caption {
+  padding: 12px 25px;
+  background-color: var(--primary, var(--primary-color));
+  color: var(--light, #fff);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+  top: 0 !important;
+  left: 9% !important;
+  transform: translateX(-50%) !important;
+  border-radius: 20px;
+  border: 2px solid var(--secondary, var(--secondary-color));
+}
+
+.slider-2 .btn-teo-caption:hover {
+  background-color: var(--secondary, var(--secondary-color));
+  color: var(--light, #fff);
+}
+
+/* Carousel Controls (Arrows) */
+.slider-2 .carousel-buttons {
+  position: absolute;
+  top: 50% !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 3;
+  padding: 0 20px;
+}
+
+.slider-2 .prev,
+.slider-2 .next {
+  font-size: 57px;
+  color: var(--light, #fff);
+  cursor: pointer;
+  transition: color 0.3s;
+  background-color: transparent !important;
+}
+
+.slider-2 .prev:hover,
+.slider-2 .next:hover {
+  color: var(--primary, var(--primary-color));
+}
+
+/* Carousel Indicators */
+.slider-2 .carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.slider-2 .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  background-color: var(--light, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-2 .carousel-indicators .active {
+  background-color: var(--primary, var(--primary-color));
+}
+
+/* Zoom Animation */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 768px) {
+  .slider-2 .carousel-caption h2 {
+    font-size: 28px;
+  }
+
+  .slider-2 .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .slider-2 .btn-teo-caption {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .slider-2 .prev,
+  .slider-2 .next {
+    font-size: 40px;
+  }
+}

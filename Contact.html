@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<base href=""/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Expert event planners managing weddings, corporate events, and private parties with creativity and flawless execution." name="description"/>
+<meta content="event planner, event management, wedding planning, corporate events" name="keywords"/>
+<title>Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="assets/css/middle_sections.css" rel="stylesheet"/>
+<link href="assets/css/anim-effects.css" rel="stylesheet"/>
+<link href="assets/css/components/header-51.css" rel="stylesheet"/>
+<link href="assets/css/components/footer-20.css" rel="stylesheet"/>
+<link href="assets/css/bootstrap.css" rel="stylesheet"/>
+<link href="assets/css/plugins.css" rel="stylesheet"/>
+<link href="assets/css/custom-Imports.css" rel="stylesheet"/>
+<link href="assets/css/custom/editmode.css" rel="stylesheet"/>
+<link href="assets/css/resonsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet"/>
+<style>
+        :root {
+            --site-font: Quicksand;
+        }
+
+        body,
+        #wrapper,
+        #wrapper *:not(i):not([class^="ri-"]):not([class*=" ri-"]) {
+            font-family: var(--site-font);
+        }
+    </style>
+</head>
+<body class="theme-1">
+<div id="wrapper">
+<div data-src="header.html" id="header"></div>
+<div id="mainPageContent">
+<section class="section-wrapper contact-27">
+<div class="container">
+<!-- Header -->
+<div class="contact-27-header text-center anim-bounce-in" style="opacity: 1 !important;">
+<div class="contact-27-icon">
+<i class="bi bi-chat-dots"></i>
+</div>
+<h2>Get In Touch</h2>
+<p>At <span class="company_name">maxclothing</span> Plan your dream Indian wedding with elegance, tradition &amp; perfection.</p>
+<div class="contact-27-info">
+<span class="client_mobile"><i class="bi bi-telephone"></i> +91 98765 43210</span>
+<span class="client_email"><i class="bi bi-envelope"></i> weddings@eventve.in</span>
+<span class="client_address"><i class="bi bi-geo-alt"></i> 149-B, Andheri-(East) Mumbai</span>
+</div>
+</div>
+<!-- Form -->
+<div class="row">
+<div class="col-md-6 col-md-offset-3 anim-bounce-in" style="opacity: 1 !important;">
+<div class="contact-27-form-box">
+<form>
+<div class="row">
+<div class="col-xs-6">
+<input class="form-control contact-27-input" placeholder="First Name" type="text"/>
+</div>
+<div class="col-xs-6">
+<input class="form-control contact-27-input" placeholder="Last Name" type="text"/>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-6">
+<input class="form-control contact-27-input" placeholder="Email" type="email"/>
+</div>
+<div class="col-xs-6">
+<input class="form-control contact-27-input" placeholder="Phone" type="text"/>
+</div>
+</div>
+<textarea class="form-control contact-27-textarea" placeholder="Tell us about your wedding..." rows="3"></textarea>
+<button class="contact-27-btn" type="submit">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div data-src="footer.html" id="footer"></div>
+</div>
+<script src="assets/js/middle-section.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/init.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/jquery.main.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/Observer.min.js"></script>
+<script src="assets/js/gsap.effects.js"></script>
+<!-- for editing purpose -->
+<script src="assets/js/common_js/send_email.js"></script>
+<script src="assets/js/common_js/html_image_editor.js"></script>
+<script src="assets/js/common_js/windows_postmessage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+        var fileName = document.title || "index";
+
+        $(document).ready(function () {
+            // loadHeaderFooter("header", "client-assets/txco211278/txco211278/header.html");
+            // loadHeaderFooter("footer", "client-assets/txco211278/txco211278/footer.html");
+
+            loadHeaderFooter("header", "header.html");
+            loadHeaderFooter("footer", "footer.html");
+        });
+
+        function loadHeaderFooter(id, file) {
+            $("#" + id).load(file, function (response, status, xhr) {
+                if (status === "error") {
+                    console.error("Error loading " + file + ":", xhr.status, xhr.statusText);
+                    return;
+                }
+
+                $("#" + id).find("a").addClass("edit-site");
+
+                if (id === "header") {
+                    if (fileName.toLowerCase() === "index" || fileName.toLowerCase() === "home") {
+                        $("#" + id).find(".main-header-section").css("display", "inline-block");
+                    } else {
+                        $("#" + id).find(".main-header-section").css("display", "none");
+                        $("#" + id).find(".header-breadcrumb-section").css("display", "inline-block");
+                        $("#" + id).find(".header-breadcrumb-section .Page_name")
+                            .text(fileName.charAt(0).toUpperCase() + fileName.slice(1));
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

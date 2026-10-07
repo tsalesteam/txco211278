@@ -1,0 +1,300 @@
+.footer-22.footer{
+    position:relative;
+    overflow:hidden;
+    margin:25px;
+    border-radius:30px;
+    background:var(--secondary,#111111);
+    color:var(--light,#ffffff);
+}
+
+.footer-22.footer:before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,rgba(255,255,255,.03),transparent 60%);
+    pointer-events:none;
+}
+
+.footer-22 .container{
+    position:relative;
+    z-index:2;
+}
+
+.footer-22 .second-footer{
+    padding:80px 60px 40px;
+}
+
+.footer-22-logo{
+    margin-bottom:25px;
+}
+
+.footer-22-logo img{
+    max-width:180px;
+    width:100%;
+    transition:.35s;
+}
+
+.footer-22-logo:hover img{
+    transform:scale(1.03);
+}
+
+.footer-22-clinic-title{
+    color:var(--light,#fff);
+    font-size:34px;
+    font-weight:700;
+    line-height:1.2;
+    margin:0 0 20px;
+}
+
+.footer-22-clinic-desc{
+    color:rgba(255,255,255,.65);
+    font-size:16px;
+    line-height:1.9;
+    margin:0 0 30px;
+}
+
+.footer-22-heading,
+.footer-22 .widget-title{
+    color:var(--primary,#f1b81a);
+    font-size:20px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin:0 0 28px;
+}
+
+.footer-22 .widget_nav_menu ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-22 .widget_nav_menu ul li{
+    margin-bottom:18px;
+}
+
+.footer-22 .widget_nav_menu ul li:last-child{
+    margin-bottom:0;
+}
+
+.footer-22 .widget_nav_menu ul li a{
+    position:relative;
+    display:inline-block;
+    color:var(--light,#fff);
+    text-decoration:none;
+    font-size:17px;
+    transition:.35s;
+}
+
+.footer-22 .widget_nav_menu ul li a:after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0;
+    height:2px;
+    background:var(--primary,#f1b81a);
+    transition:.35s;
+}
+
+.footer-22 .widget_nav_menu ul li a:hover{
+    color:var(--primary,#f1b81a);
+    padding-left:8px;
+}
+
+.footer-22 .widget_nav_menu ul li a:hover:after{
+    width:100%;
+}
+
+.footer-22 .footer-contact-card{
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(241,184,26,.15);
+}
+
+.footer-22 .footer-contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom:20px;
+    color:var(--light,#fff);
+    line-height:1.8;
+}
+
+.footer-22 .footer-contact-item:last-child{
+    margin-bottom:0;
+}
+
+.footer-22 .footer-contact-item i{
+    min-width:20px;
+    margin-top:3px;
+    color:var(--primary,#f1b81a);
+}
+
+.footer-22 .footer-contact-item a{
+    color:var(--light,#fff);
+    text-decoration:none;
+    transition:.35s;
+}
+
+.footer-22 .footer-contact-item a:hover{
+    color:var(--primary,#f1b81a);
+}
+
+.footer-22-social{
+    display:flex;
+    gap:12px;
+    padding:0;
+    margin:25px 0 0;
+    list-style:none;
+}
+
+.footer-22-social li{
+    margin:0;
+}
+
+.footer-22-social a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(241,184,26,.08);
+    border:1px solid rgba(241,184,26,.15);
+    color:var(--primary,#f1b81a);
+    transition:.35s;
+    text-decoration:none;
+}
+
+.footer-22-social a:hover{
+    background:var(--primary,#f1b81a);
+    color:var(--secondary,#111);
+    transform:translateY(-3px);
+}
+
+.footer-22-big-title{
+    margin-top:70px;
+    text-align:center;
+    font-size:160px;
+    font-weight:800;
+    line-height:1;
+    letter-spacing:-8px;
+    text-transform:uppercase;
+    color:rgba(241,184,26,.08);
+    user-select:none;
+}
+
+.footer-22-bottom{
+    margin-top:40px;
+    padding-top:25px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-22-bottom p{
+    margin:0;
+    color:rgba(255,255,255,.7);
+    font-size:15px;
+}
+
+.footer-22-bottom p a{
+    color:var(--primary,#f1b81a);
+    text-decoration:none;
+}
+
+.footer-22-policy{
+    text-align:right;
+}
+
+.footer-22-policy a{
+    color:var(--light,#fff);
+    text-decoration:none;
+    transition:.35s;
+}
+
+.footer-22-policy a:hover{
+    color:var(--primary,#f1b81a);
+}
+
+.footer-22-policy span{
+    margin:0 12px;
+    color:rgba(255,255,255,.3);
+}
+
+.footer-22_old,
+.footer-22 .widget-area:nth-child(3),
+.footer-22 .widget-area:nth-child(4){
+    border:none;
+}
+
+@media(max-width:1199px){
+
+    .footer-22-big-title{
+        font-size:120px;
+        letter-spacing:-5px;
+    }
+
+}
+
+@media(max-width:991px){
+
+    .footer-22 .second-footer{
+        padding:50px 25px;
+    }
+
+    .footer-22 .widget-area{
+        margin-bottom:40px;
+    }
+
+    .footer-22-big-title{
+        font-size:80px;
+        letter-spacing:-3px;
+    }
+
+    .footer-22-policy{
+        text-align:left;
+        margin-top:15px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .footer-22{
+        margin:15px;
+        border-radius:20px;
+    }
+
+    .footer-22 .second-footer{
+        padding:35px 20px;
+    }
+
+    .footer-22-clinic-title{
+        font-size:28px;
+    }
+
+    .footer-22-clinic-desc{
+        font-size:15px;
+    }
+
+    .footer-22-heading,
+    .footer-22 .widget-title{
+        margin-bottom:20px;
+    }
+
+    .footer-22-big-title{
+        font-size:52px;
+        letter-spacing:-2px;
+    }
+
+    .footer-22-policy,
+    .footer-22-bottom{
+        text-align:center;
+    }
+
+    .footer-22-social{
+        justify-content:center;
+    }
+
+}

@@ -1,0 +1,291 @@
+/* =========================================
+   GOOGLE FONTS
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header-23 {
+  font-family: 'Bebas Neue', sans-serif !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.header-23-top-bar {
+  background: rgba(27, 27, 27, 0.24);
+  padding: 14px 0;
+  font-size: 13px;
+  color: var(--light, #ffffff);
+}
+
+.header-23-bar-list {
+  margin: 0;
+}
+
+.header-23-bar-list i {
+  margin-right: 4px;
+}
+
+
+/* =========================================
+   LOGO & NAVIGATION HOLDER
+========================================= */
+
+.header-23-holder {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 12px 0;
+}
+
+.header-23-logo img {
+  max-height: 46px;
+  padding-left: 49px;
+}
+
+.header-23-navbar {
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.header-23-menu > li > a {
+  color: var(--light, #ffffff) !important;
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 15px !important;
+  letter-spacing: 0.2px;
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-23 li a {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+
+.header-23 .navbar-default .navbar-nav > li > a {
+  color: var(--light, #ffffff) !important;
+  border-bottom: 1px solid rgba(230, 228, 228, 0.08);
+}
+
+.header-23-menu > li.active > a,
+.header-23-menu > li > a:hover,
+.header-23-menu > li > a:focus {
+  color: var(--primary, #ef4444) !important;
+}
+
+
+/* =========================================
+   HOVER INDICATOR
+========================================= */
+
+.header-23-menu > li > a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: var(--primary, #ef4444);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.header-23-menu > li > a:hover::before,
+.header-23-menu > li.active > a::before {
+  transform: scaleX(1);
+}
+
+
+/* =========================================
+   QUOTE BUTTON
+========================================= */
+
+.header-23-btn-quote {
+  background: var(--primary, #ef4444);
+  border: none;
+  color: var(--light, #ffffff) !important;
+  padding: 9px 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.header-23-btn-quote:hover {
+  background: var(--secondary, #d99a00);
+  color: var(--light, #ffffff) !important;
+}
+
+
+/* =========================================
+   SEARCH ICON
+========================================= */
+
+.header-23-search-li a {
+  padding: 10px 10px 10px 5px;
+}
+
+
+/* =========================================
+   NAVBAR COLLAPSE
+========================================= */
+
+.header-23 #nav .navbar-collapse {
+  z-index: 999;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.header-23-hero {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 640px;
+  background: center / cover no-repeat;
+  background-color: var(--text, #111827);
+  color: var(--light, #f4f4f4);
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+
+
+/* =========================================
+   HERO OVERLAY
+========================================= */
+
+.header-23-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.header-23-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 175px 80px 100px 80px;
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.header-23-hero-title {
+  font-weight: 800;
+  font-size: 78px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: var(--light, #ffffff);
+  font-family: 'Bebas Neue', sans-serif !important;
+  letter-spacing: 15px;
+}
+
+
+/* =========================================
+   HERO SUBTITLE
+========================================= */
+
+.header-23-hero-sub {
+  font-size: 18px;
+  margin-bottom: 35px;
+  max-width: 540px;
+  color: var(--border, #e5e7eb);
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.header-23-btn-primary {
+  background: var(--primary, #ef4444);
+  border: none;
+  color: var(--light, #ffffff);
+  font-weight: 600;
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+  border-radius: 54px;
+  letter-spacing: 5.3px;
+}
+
+.header-23-btn-primary:hover {
+  background: var(--secondary, #dc2626);
+  color: var(--light, #ffffff);
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   HIGHLIGHT
+========================================= */
+
+.header-23-highlight {
+  color: var(--accent, #e33b3b) !important;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .header-23-hero-content {
+    padding: 140px 30px 60px 30px;
+  }
+
+  .header-23-hero-title {
+    font-size: 38px;
+    letter-spacing: 8px;
+  }
+
+  .header-23-hero-sub {
+    font-size: 15px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .header-23-hero-title {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  #dynamic-header {
+    background: rgba(227, 59, 59, 0.27);
+  }
+
+  .header-23-hero-sub {
+    font-size: 13px;
+  }
+
+}

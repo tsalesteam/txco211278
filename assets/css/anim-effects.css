@@ -1,0 +1,476 @@
+
+/* --- Slide Effects --- */
+.anim-slide-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.anim-slide-up {
+    transform: translateY(60px);
+}
+
+.anim-slide-down.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.anim-slide-down {
+    transform: translateY(-60px);
+}
+
+.anim-slide-left.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+.anim-slide-left {
+    transform: translateX(60px);
+}
+
+.anim-slide-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+.anim-slide-right {
+    transform: translateX(-60px);
+}
+
+/* --- Fade In --- */
+.anim-fade-in.in-view {
+    opacity: 1;
+}
+.anim-fade-in {
+    opacity: 0;
+}
+
+/* --- Zoom In --- */
+.anim-zoom-in.in-view {
+    opacity: 1;
+    transform: scale(1);
+}
+.anim-zoom-in {
+    transform: scale(0.85);
+}
+
+/* --- Rotate In --- */
+.anim-rotate-in.in-view {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+.anim-rotate-in {
+    transform: rotate(-15deg);
+}
+
+/* --- Flip In --- */
+.anim-flip-in.in-view {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.anim-flip-in {
+    transform: rotateY(90deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+/* --- Bounce In --- */
+.anim-bounce-in.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.anim-bounce-in {
+    transform: translateY(100px);
+    transition: all 0.9s cubic-bezier(.68, -0.55, .27, 1.55);
+}
+
+/* --- Blur In --- */
+.anim-blur-in.in-view {
+    opacity: 1;
+    filter: blur(0);
+}
+.anim-blur-in {
+    filter: blur(6px);
+    transition: all 1s ease;
+}
+
+.anim-slide-up,
+.anim-slide-down,
+.anim-slide-left,
+.anim-slide-right,
+.anim-fade-in,
+.anim-zoom-in,
+.anim-rotate-in,
+.anim-flip-in,
+.anim-bounce-in,
+.anim-blur-in {
+    opacity: 0;
+    transition: all 1.8s ease; /* smooth animation */
+}
+/* --- 1. Stripe Reveal Horizontal --- */
+.anim-stripe-reveal.in-view {
+  opacity: 1;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+.anim-stripe-reveal {
+  opacity: 0;
+  transition: all 1.6s ease;
+  mask-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 12px,
+    black 12px,
+    black 24px
+  );
+  -webkit-mask-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 12px,
+    black 12px,
+    black 24px
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+}
+
+/* --- 2. Flip 3D Left --- */
+.anim-flip3d-left.in-view {
+  opacity: 1;
+  transform: perspective(800px) rotateY(0);
+}
+.anim-flip3d-left {
+  opacity: 0;
+  transform: perspective(800px) rotateY(90deg);
+  transition: all 1.6s ease;
+}
+
+/* --- 3. Flip 3D Right --- */
+.anim-flip3d-right.in-view {
+  opacity: 1;
+  transform: perspective(800px) rotateY(0);
+}
+.anim-flip3d-right {
+  opacity: 0;
+  transform: perspective(800px) rotateY(-90deg);
+  transition: all 1.6s ease;
+}
+
+/* --- 4. Flip 3D Up --- */
+.anim-flip3d-up.in-view {
+  opacity: 1;
+  transform: perspective(800px) rotateX(0);
+}
+.anim-flip3d-up {
+  opacity: 0;
+  transform: perspective(800px) rotateX(90deg);
+  transition: all 1.6s ease;
+}
+
+/* --- 5. Flip 3D Down --- */
+.anim-flip3d-down.in-view {
+  opacity: 1;
+  transform: perspective(800px) rotateX(0);
+}
+.anim-flip3d-down {
+  opacity: 0;
+  transform: perspective(800px) rotateX(-90deg);
+  transition: all 1.6s ease;
+}
+
+/* --- 6. Cube Rotate In --- */
+.anim-cube-rotate.in-view {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg);
+}
+.anim-cube-rotate {
+  opacity: 0;
+  transform: perspective(1000px) rotateY(180deg);
+  transition: all 1.8s cubic-bezier(.25,.1,.25,1);
+}
+
+/* --- 7. Tilt Zoom In --- */
+.anim-tilt-zoom.in-view {
+  opacity: 1;
+  transform: rotateX(0deg) rotateY(0deg) scale(1);
+}
+.anim-tilt-zoom {
+  opacity: 0;
+  transform: rotateX(10deg) rotateY(-10deg) scale(0.85);
+  transition: all 1.6s ease;
+}
+
+/* --- 8. Depth Pop In --- */
+.anim-depth-pop.in-view {
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+}
+.anim-depth-pop {
+  opacity: 0;
+  transform: translateZ(-200px) scale(0.8);
+  transition: all 1.5s ease-out;
+  transform-style: preserve-3d;
+}
+
+/* --- 9. 3D Rotate Diagonal --- */
+.anim-rotate-diagonal.in-view {
+  opacity: 1;
+  transform: rotate3d(1, 1, 0, 0deg);
+}
+.anim-rotate-diagonal {
+  opacity: 0;
+  transform: rotate3d(1, 1, 0, 90deg);
+  transition: all 1.8s ease;
+}
+
+/* --- 10. Layer Slide In (3D Layers) --- */
+.anim-layer-slide.in-view {
+  opacity: 1;
+  transform: translateZ(0);
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.anim-layer-slide {
+  opacity: 0;
+  transform: translateZ(-150px);
+  box-shadow: 0 40px 60px rgba(0,0,0,0.15);
+  transition: all 1.8s ease;
+}
+
+/* --- 11. Spiral Zoom In --- */
+.anim-spiral-zoom.in-view {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+.anim-spiral-zoom {
+  opacity: 0;
+  transform: rotate(-720deg) scale(0);
+  transition: all 2s ease-in-out;
+}
+/* Animations */
+.anim-slide-right {
+  animation: slideRight 1s ease forwards;
+}
+
+.anim-slide-left {
+  animation: slideLeft 1s ease forwards;
+}
+/* --- 1. Reveal From Center --- */
+.anim-reveal-center.in-view {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+.anim-reveal-center {
+    opacity: 0;
+    clip-path: inset(50% 50% 50% 50%);
+    transition: all 1.5s ease;
+}
+
+/* --- 2. Curtain Open --- */
+.anim-curtain-open.in-view {
+    opacity: 1;
+    clip-path: inset(0);
+}
+.anim-curtain-open {
+    opacity: 0;
+    clip-path: inset(0 50% 0 50%);
+    transition: all 1.6s ease;
+}
+
+/* --- 3. Skew In --- */
+.anim-skew-in.in-view {
+    opacity: 1;
+    transform: skew(0deg,0deg) translateY(0);
+}
+.anim-skew-in {
+    opacity: 0;
+    transform: skew(15deg,8deg) translateY(80px);
+    transition: all 1.5s ease;
+}
+
+/* --- 4. Swing In --- */
+.anim-swing-in.in-view {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+.anim-swing-in {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotate(-30deg);
+    transition: all 1.5s ease;
+}
+
+/* --- 5. Elastic Scale --- */
+.anim-elastic-scale.in-view {
+    opacity: 1;
+    transform: scale(1);
+}
+.anim-elastic-scale {
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1.2s cubic-bezier(.68,-0.6,.32,1.6);
+}
+
+/* --- 6. Floating Up --- */
+.anim-float-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.anim-float-up {
+    opacity: 0;
+    transform: translateY(120px);
+    transition: all 2s cubic-bezier(.22,1,.36,1);
+}
+
+/* --- 7. Magnetic Pull --- */
+.anim-magnetic.in-view {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+.anim-magnetic {
+    opacity: 0;
+    transform: translateX(-150px) scale(0.7);
+    transition: all 1.8s cubic-bezier(.19,1,.22,1);
+}
+
+/* --- 8. Wave Rise --- */
+.anim-wave-rise.in-view {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+.anim-wave-rise {
+    opacity: 0;
+    transform: translateY(80px) rotate(8deg);
+    transition: all 1.8s ease;
+}
+
+/* --- 9. Fold Open --- */
+.anim-fold-open.in-view {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0deg);
+}
+.anim-fold-open {
+    opacity: 0;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: all 1.6s ease;
+}
+
+/* --- 10. Door Open Left --- */
+.anim-door-left.in-view {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.anim-door-left {
+    opacity: 0;
+    transform-origin: left center;
+    transform: perspective(1000px) rotateY(-100deg);
+    transition: all 1.7s ease;
+}
+
+/* --- 11. Door Open Right --- */
+.anim-door-right.in-view {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.anim-door-right {
+    opacity: 0;
+    transform-origin: right center;
+    transform: perspective(1000px) rotateY(100deg);
+    transition: all 1.7s ease;
+}
+
+/* --- 12. Parallax Zoom --- */
+.anim-parallax-zoom.in-view {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+.anim-parallax-zoom {
+    opacity: 0;
+    transform: scale(1.3) translateY(60px);
+    transition: all 2s ease;
+}
+
+/* --- 13. Blur Zoom Reveal --- */
+.anim-blur-zoom.in-view {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+.anim-blur-zoom {
+    opacity: 0;
+    transform: scale(1.2);
+    filter: blur(20px);
+    transition: all 1.8s ease;
+}
+
+/* --- 14. Spin Reveal --- */
+.anim-spin-reveal.in-view {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+.anim-spin-reveal {
+    opacity: 0;
+    transform: rotate(360deg) scale(0);
+    transition: all 1.8s ease;
+}
+
+/* --- 15. Bounce Rotate --- */
+.anim-bounce-rotate.in-view {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0);
+}
+.anim-bounce-rotate {
+    opacity: 0;
+    transform: rotate(-45deg) translateY(120px);
+    transition: all 1.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* --- 16. Mask Sweep --- */
+.anim-mask-sweep.in-view {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+.anim-mask-sweep {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transition: all 1.6s ease;
+}
+
+/* --- 17. Drift In --- */
+.anim-drift-in.in-view {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+}
+.anim-drift-in {
+    opacity: 0;
+    transform: translateX(-120px) rotate(-12deg);
+    transition: all 1.8s ease;
+}
+
+/* --- 18. Rocket Up --- */
+.anim-rocket-up.in-view {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+.anim-rocket-up {
+    opacity: 0;
+    transform: translateY(250px) scale(0.5);
+    transition: all 1.6s cubic-bezier(.17,.89,.32,1.49);
+}
+
+/* --- 19. Flip Scale --- */
+.anim-flip-scale.in-view {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+}
+.anim-flip-scale {
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5);
+    transition: all 1.8s ease;
+}
+
+/* --- 20. GSAP Style Smooth Entrance --- */
+.anim-gsap-smooth.in-view {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+.anim-gsap-smooth {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+    transition: all 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}

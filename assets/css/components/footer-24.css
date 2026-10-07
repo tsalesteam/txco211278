@@ -1,0 +1,357 @@
+.footer-24.footer{
+    position:relative;
+    overflow:hidden;
+    margin:0;
+    border-radius:0;
+    background:var(--bg,#f7fcfb);
+    color:var(--text,#222);
+}
+
+.footer-24.footer:before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.95) 0%,
+        rgba(234,247,244,.92) 45%,
+        rgba(221,243,238,.96) 100%
+    );
+    z-index:1;
+}
+
+.footer-24.footer:after{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    border-radius:50%;
+    right:-180px;
+    top:-180px;
+    background:rgba(24,166,137,.08);
+    z-index:1;
+}
+
+.footer-24 .container{
+    position:relative;
+    z-index:2;
+}
+
+.footer-24 .second-footer{
+    padding:100px 60px 40px;
+}
+
+/* Logo */
+
+.footer-24-logo{
+    margin-bottom:25px;
+}
+
+.footer-24-logo img{
+    max-width:180px;
+    width:100%;
+    transition:.35s;
+}
+
+.footer-24-logo:hover img{
+    transform:scale(1.04);
+}
+
+/* Left Content */
+
+.footer-24-clinic-title{
+    margin:0 0 25px;
+    color:var(--primary,#18a689);
+    font-size:56px;
+    line-height:1;
+    font-weight:800;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.footer-24-clinic-desc{
+    max-width:520px;
+    margin:0 0 35px;
+    color:var(--secondary,#666);
+    font-size:16px;
+    line-height:1.9;
+}
+
+/* Headings */
+
+.footer-24-heading,
+.footer-24 .widget-title{
+    position:relative;
+    margin:0 0 35px;
+    color:var(--text,#1b1b1b);
+    font-size:20px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.footer-24-heading:after,
+.footer-24 .widget-title:after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-12px;
+    width:65px;
+    height:4px;
+    border-radius:10px;
+    background:var(--primary,#18a689);
+}
+
+/* Columns */
+
+.footer-24 .widget-area{
+    position:relative;
+}
+
+.footer-24 .widget-area:nth-child(2){
+    padding-left:60px;
+}
+
+.footer-24 .widget-area:nth-child(2):before{
+    content:"";
+    position:absolute;
+    left:20px;
+    top:10px;
+    width:1px;
+    height:92%;
+    background:#d9ebe8;
+}
+
+.footer-24 .widget-area:nth-child(3){
+    padding-left:40px;
+}
+
+/* Navigation */
+
+.footer-24 .widget_nav_menu ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.footer-24 .widget_nav_menu li{
+    margin-bottom:16px;
+}
+
+.footer-24 .widget_nav_menu li:last-child{
+    margin-bottom:0;
+}
+
+.footer-24 .widget_nav_menu a{
+    position:relative;
+    display:inline-block;
+    padding-left:18px;
+    color:var(--secondary,#555);
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.footer-24 .widget_nav_menu a:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:9px;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--primary,#18a689);
+    transition:.35s;
+}
+
+.footer-24 .widget_nav_menu a:hover{
+    color:var(--primary,#18a689);
+    transform:translateX(8px);
+}
+
+/* Contact Card */
+
+.footer-24 .footer-contact-card{
+    padding:38px;
+    border-radius:28px;
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(24,166,137,.12);
+    box-shadow:0 20px 55px rgba(24,166,137,.08);
+}
+
+.footer-24 .footer-contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:24px;
+    color:var(--secondary,#555);
+    line-height:1.8;
+}
+
+.footer-24 .footer-contact-item:last-child{
+    margin-bottom:0;
+}
+
+.footer-24 .footer-contact-item i{
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    border-radius:50%;
+    background:#eaf7f4;
+    color:var(--primary,#18a689);
+    font-size:20px;
+}
+
+.footer-24 .footer-contact-item a{
+    color:var(--secondary,#555);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-24 .footer-contact-item a:hover{
+    color:var(--primary,#18a689);
+}
+
+/* Social */
+
+.footer-24-social{
+    display:flex;
+    gap:14px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.footer-24-social li{
+    margin:0;
+}
+
+.footer-24-social a{
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#fff;
+    border:2px solid #d8efea;
+    color:var(--primary,#18a689);
+    text-decoration:none;
+    font-size:20px;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(24,166,137,.08);
+}
+
+.footer-24-social a:hover{
+    background:var(--primary,#18a689);
+    border-color:var(--primary,#18a689);
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+/* Bottom */
+
+.footer-24-bottom{
+    margin-top:70px;
+    padding-top:30px;
+    border-top:1px solid #dceeea;
+}
+
+.footer-24-bottom p{
+    margin:0;
+    color:var(--secondary,#666);
+    font-size:14px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.footer-24-bottom p a{
+    color:var(--primary,#18a689);
+    text-decoration:none;
+}
+
+.footer-24-policy{
+    text-align:right;
+}
+
+.footer-24-policy a{
+    color:#444;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.footer-24-policy a:hover{
+    color:var(--primary,#18a689);
+}
+
+.footer-24-policy span{
+    margin:0 12px;
+    color:#bbb;
+}
+
+/* Responsive */
+
+@media (max-width:991px){
+
+    .footer-24 .second-footer{
+        padding:70px 30px 40px;
+    }
+
+    .footer-24-clinic-title{
+        font-size:42px;
+    }
+
+    .footer-24 .widget-area{
+        margin-bottom:45px;
+        padding-left:15px !important;
+    }
+
+    .footer-24 .widget-area:nth-child(2):before{
+        display:none;
+    }
+
+    .footer-24-policy{
+        text-align:left;
+        margin-top:15px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .footer-24 .second-footer{
+        padding:60px 20px 30px;
+    }
+
+    .footer-24-clinic-title{
+        font-size:34px;
+    }
+
+    .footer-24 .footer-contact-card{
+        padding:28px;
+    }
+
+    .footer-24-social{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .footer-24-social a{
+        width:46px;
+        height:46px;
+        font-size:18px;
+    }
+
+    .footer-24-bottom,
+    .footer-24-policy{
+        text-align:center;
+    }
+
+}

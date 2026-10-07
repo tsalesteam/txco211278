@@ -1,0 +1,150 @@
+@font-face {
+font-family: 'Lobster';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url('https://fonts.gstatic.com/s/lobster/v30/neILzCirqoswsqX9_oWsMqEzSJQ.woff2') format('woff2');
+}
+
+.header-15 {
+font-family: 'Lato', sans-serif !important;
+}
+
+.header-15-header-section {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+min-height: 600px;
+position: relative;
+color: var(--light, #ffffff);
+font-family: 'Lato', sans-serif;
+}
+
+.header-15-navbar {
+background-color: transparent;
+border: none;
+margin-bottom: 0;
+}
+
+.header-15-header-section .navbar-collapse {
+padding: 25px;
+}
+
+.header-15-navbar .navbar-nav > li > a {
+color: var(--light, #ffffff) !important;
+font-weight: 400;
+}
+
+.header-15-navbar .navbar-nav > .dropdown > a .caret {
+border-top-color: var(--light, #ffffff);
+}
+
+.header-15-navbar .navbar-nav > .dropdown-menu {
+background-color: var(--light, #ffffff);
+min-width: 200px;
+border: none;
+border-radius: 0;
+}
+
+.header-15-navbar .navbar-nav > .dropdown-menu > li > a {
+color: var(--text, #333333);
+padding: 20px;
+}
+
+.header-15-navbar .navbar-nav > .dropdown-menu > li:hover > a,
+.header-15-navbar .navbar-nav > .dropdown-menu > li > a:hover {
+background-color: var(--primary, #5d83c5);
+color: var(--light, #ffffff);
+}
+
+.header-15-navbar-brand img {
+height: 60px;
+width: auto;
+}
+
+.header-15-hero-text {
+position: absolute;
+top: 50%;
+left: 33%;
+transform: translate(-50%, -50%);
+text-align: left;
+width: 100%;
+max-width: 600px;
+padding: 20px;
+color: var(--light, #ffffff);
+font-family: 'Quicksand', sans-serif;
+}
+
+.header-15-hero-text h1 {
+font-size: 48px;
+font-weight: bold;
+line-height: 1.2;
+margin-bottom: 20px;
+color: var(--light, #ffffff);
+font-family: 'Lobster', cursive;
+}
+
+.header-15-subtext {
+font-size: 16px;
+line-height: 1.6;
+margin-bottom: 20px;
+color: var(--light, #eeeeee);
+}
+
+.header-15-schedule-btn {
+background-color: var(--accent, #fbb500);
+border: none;
+padding: 10px 20px;
+font-weight: bold;
+font-size: 14px;
+border-radius: 30px;
+color: var(--light, #ffffff);
+transition: all 0.3s ease;
+}
+
+.header-15-schedule-btn:hover {
+background-color: var(--secondary, #d99a00);
+color: var(--light, #ffffff);
+}
+
+.header-15-tagline {
+font-size: 14px;
+font-weight: bold;
+background: var(--light, rgba(255, 255, 255, 0.2));
+display: inline-block;
+padding: 5px 10px;
+border-radius: 15px;
+margin-bottom: 15px;
+}
+
+.header-15 #nav .navbar-collapse {
+z-index: 999;
+}
+
+@media (max-width: 767px) {
+.header-15-hero-text {
+top: 50%;
+left: 50%;
+text-align: center;
+transform: translate(-50%, -50%);
+padding: 10px;
+}
+
+.header-15-hero-text h1 {
+font-size: 28px;
+}
+
+.header-15-subtext {
+font-size: 14px;
+}
+
+.header-15-tagline {
+font-size: 12px;
+}
+
+.header-15-schedule-btn {
+padding: 9px 18px;
+font-size: 13px;
+}
+}
